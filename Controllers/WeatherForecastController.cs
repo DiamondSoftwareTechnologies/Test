@@ -35,5 +35,11 @@ namespace CoreAPI.Controllers
             })
             .ToArray();
         }
+        [HttpGet]
+        public IEnumerable<int> GetNumbers()
+        {
+            var numbers = new IEnumerable<int>(){1,2,3,4};
+            return numbers;
+        }
     }
 }
